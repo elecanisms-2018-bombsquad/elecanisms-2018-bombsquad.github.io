@@ -61,13 +61,30 @@
 
 	.row {
 		border-bottom: solid 1px transparent;
-		display: table; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
+
 	}
+
+	.row{
+		display: table; /* Make the container element behave like a table */
+	}
+
+.row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
 
 	.row > * {
 		float: left;
 	}
+
+	.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
 
 	.row:after, .row:before {
 		content: '';
@@ -206,7 +223,7 @@
 				margin: 0 0 -1px 0;
 			}
 
-			
+
 
 	/* Cells */
 
