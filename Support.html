@@ -7,7 +7,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Bomb Squad - Gameplay</title>
+		<title>Elements - Transit by TEMPLATED</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -43,120 +43,50 @@
 				<div class="container">
 
 					<header class="major">
-						<h2>Gameplay</h2>
-						<p>All the modules of the Bomb Squad Game!</p>
+						<h2>Supporting Technology</h2>
+						<p>The assorted ancillary technology behind the game.</p>
 					</header>
-					<!--link to Instruction manual-->
-					<a href="" class="image fit"><img src="images/pic07.jpg" alt="Click for manual!" /></a>
-					<p>Welcome to the Bomb Squad!  In this game, one player, the bomb defuser, is in
-					charge of communicating the bomb setup to teammates, while the teammates have access
-					to the bomb defusal manual try to figure out and tell their teammate how to defuse
-					the bomb.</p>
 
-					<p>The bomb has a variety of different puzzle modules to solve; the players must
-						solve the puzzle before the time runs out.  Every module has a distinct set of
-						instructions required to properly defuse it, but even the same module may have
-						a different solution each time.  Every mistake is tracked on the strike counter.
-						Unlike bowling, you want to avoid strikes - each strike will speed up the countdown
-						timer, and three strikes results in immediate combustion.</p>
+			<!-- Booth -->
+			<section id="Module Connections" class="wrapper style2 special">
+				<div class="container">
 
-					<p>To begin the game, have your brave bomb volunteer insert a penny to activate the
-						bomb defusal routine.  Rounds are expected to take around 3-5 minutes, but
-						may be longer or shorter depending on the trigger happiness of teammates.</p>
+					<header class = "major">
+						<h2>Game Booth</h2>
+					</header>
 
-
+						<img src = "images"/>
+						<p align="left">
+							The game booth creates the experience of isolation for the Bomb
+							Defuser (in addition to preventing the Defuser from sneakily
+							looking at teammates' manuals). Once the player inserts
+							a coin into the coin acceptor, the LED bar illuminates the inside of
+							the booth, setting an ambience fitting for the tense bomb defusal situation.
+							The curtain provides the last wall to separate the player from
+							the outside world from all but sound (and maybe smell).
+						</p>
 
 				</div>
 			</section>
 
-		<!-- Modules -->
-		<section id="master" class="wrapper style1 special">
-			<div class="container">
+			<!-- Power -->
+			<section id="Power Connections" class="wrapper style2 special">
+				<div class="container">
+					<header class = "major">
+						<h2>Power Connections</h2>
+					</header>
 
-				<header class = "major">
-					<h2>Meet the Modules</h2>
+						<img src = "images/"/>
+						<p align="left">
+							Two power supplies provide the energy required to run the game
+							(at least from a technical perspective).  The 12V power supply
+							runs both the coin acceptor, Arduino, and by extension the
+							booth LEDs.  Meanwhile, the 5V power supply connects to a relay,
+							which powers all the bomb and all its modules.
+						</p>
 
-				</header>
-
-					<div class="row">
-
-						<div class="4u 12u$(medium)">
-							<section class="box">
-								<h3>Master Module</h3>
-								<img src="images/profile_placeholder.gif" alt="" />
-								<p>The Master Module contains both the countdown timer as well as the
-								main PIC controller.  It communicates with all the other modules to
-								keep track of puzzle completion through the I2C protocol.</p>
-							</section>
-						</div>
-
-					<div class="4u 12u$(medium)">
-						<section class="box">
-								<h3>Switch Matrix Module</h3>
-
-							<img src="images/profile_placeholder.gif" alt=""/>
-							<p>The Switch Matrix Module </p>
-						</section>
-					</div>
-
-					<div class="4u 12u$(medium)">
-						<section class="box">
-							<h3>Codeword Module</h3>
-							<img src="images/profile_placeholder.gif" alt="" />
-							<p>The Codeword Module presents the bomb defuser with five different
-							letter slots, with each slot containing a unique pool of letters.
-							The defuser needs to cycle through each letter slot and determine
-							the available letters to form the codeword.  The defuser's teammates
-							have the list of possible codewords, and work with the defuser to figure
-							out what the codeword could be based on the unique letter pools.</p>
-						</section>
-					</div>
 				</div>
-
-
-				<div class="row">
-					<div class="4u 12u$(medium)">
-						<section class="box">
-							<h3>Combo Lock Module</h3>
-							<img src="images/profile_placeholder.gif" alt="" />
-							<p>The Combo Lock Module </p>
-						</section>
-					</div>
-
-					<div class="4u 12u$(medium)">
-						<section class="box">
-							<h3>Needy Module</h3>
-							<img src="images/profile_placeholder.gif" alt="" />
-							<p>The Needy Module is a simple module where the object is to
-							remember to turn it off at every interval.  If neglected, the
-							bomb will explode.</p>
-						</section>
-					</div>
-
-					<div class="4u 12u$(medium)">
-						<section class="box">
-							<h3>Aux Cable Module</h3>
-							<img src="images/profile_placeholder.gif" alt="" />
-							<p>The Aux Cable Module </p>
-						</section>
-					</div>
-				</div>
-
-				<div class="row">
-
-					<div class="4u 12u$(medium)">
-						<section class="box">
-							<h3>Morse Code Module</h3>
-							<img src="images/profile_placeholder.gif" alt="" />
-							<p>The Morse Code Module </p>
-						</section>
-					</div>
-				</div>
-
-		</section>
-
-
-
+			</section>
 
 		<!-- Footer -->
 			<footer id="footer">

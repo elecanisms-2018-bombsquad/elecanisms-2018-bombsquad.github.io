@@ -7,7 +7,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Bomb Squad - Gameplay</title>
+		<title>Elements - Transit by TEMPLATED</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -39,124 +39,52 @@
 		</header>
 
 		<!-- Main -->
+
 			<section id="main" class="wrapper">
 				<div class="container">
 
 					<header class="major">
-						<h2>Gameplay</h2>
-						<p>All the modules of the Bomb Squad Game!</p>
+						<h2>Architecture</h2>
+						<p>The interconnected hardware design</p>
 					</header>
-					<!--link to Instruction manual-->
-					<a href="" class="image fit"><img src="images/pic07.jpg" alt="Click for manual!" /></a>
-					<p>Welcome to the Bomb Squad!  In this game, one player, the bomb defuser, is in
-					charge of communicating the bomb setup to teammates, while the teammates have access
-					to the bomb defusal manual try to figure out and tell their teammate how to defuse
-					the bomb.</p>
-
-					<p>The bomb has a variety of different puzzle modules to solve; the players must
-						solve the puzzle before the time runs out.  Every module has a distinct set of
-						instructions required to properly defuse it, but even the same module may have
-						a different solution each time.  Every mistake is tracked on the strike counter.
-						Unlike bowling, you want to avoid strikes - each strike will speed up the countdown
-						timer, and three strikes results in immediate combustion.</p>
-
-					<p>To begin the game, have your brave bomb volunteer insert a penny to activate the
-						bomb defusal routine.  Rounds are expected to take around 3-5 minutes, but
-						may be longer or shorter depending on the trigger happiness of teammates.</p>
+				</section>
 
 
+			<!-- Module Connections -->
+			<section id="moduleconnections" class="wrapper style2 special">
+				<div class="container">
+					<img src = "images/"/>
+					<header class = "major">
+						<h2>Module Connections</h2>
+					</header>
 
+						<img src = "images/"/>
+						<p align="left"> Every module is connected to the main backplate through an
+							integrated connection point.  This makes the module system robust, quick,
+							and efficient at changing out modules.  </p>
+
+							<p align="left">
+							 The integrated connection point consists of
+							 wooden pegs and a DS-9 connector held in place by magnetic
+							latches.  The DS-9 connectors are wired to a central 3.3V rail and
+							ground for power, while its SCL and SDA connectors all connect
+							to the Master Module for communicating through the I2C Protocol.
+							The DS-9 connectors were chosen for their low insertion force and availability
+							of pins for various functions, while the magnetic latches ensure a stable and
+							solid connection that can be disconnected easily.
+						</p>
+
+						<img src = "images/"/> <!--image of pinout-->
+
+						<p align="left">
+							Additionally, every column of modules are connected to each
+							other through a non-permanent dovetail joint.  The asymmetry in the joint
+							designates a module as a "top" or "bottom" module.  Each each module is completely
+							swappable with another module of its kind (i.e. a bottom module can be replaced
+							with another module), which allows for variation in difficulty and challenges.
+						</p>
 				</div>
 			</section>
-
-		<!-- Modules -->
-		<section id="master" class="wrapper style1 special">
-			<div class="container">
-
-				<header class = "major">
-					<h2>Meet the Modules</h2>
-
-				</header>
-
-					<div class="row">
-
-						<div class="4u 12u$(medium)">
-							<section class="box">
-								<h3>Master Module</h3>
-								<img src="images/profile_placeholder.gif" alt="" />
-								<p>The Master Module contains both the countdown timer as well as the
-								main PIC controller.  It communicates with all the other modules to
-								keep track of puzzle completion through the I2C protocol.</p>
-							</section>
-						</div>
-
-					<div class="4u 12u$(medium)">
-						<section class="box">
-								<h3>Switch Matrix Module</h3>
-
-							<img src="images/profile_placeholder.gif" alt=""/>
-							<p>The Switch Matrix Module </p>
-						</section>
-					</div>
-
-					<div class="4u 12u$(medium)">
-						<section class="box">
-							<h3>Codeword Module</h3>
-							<img src="images/profile_placeholder.gif" alt="" />
-							<p>The Codeword Module presents the bomb defuser with five different
-							letter slots, with each slot containing a unique pool of letters.
-							The defuser needs to cycle through each letter slot and determine
-							the available letters to form the codeword.  The defuser's teammates
-							have the list of possible codewords, and work with the defuser to figure
-							out what the codeword could be based on the unique letter pools.</p>
-						</section>
-					</div>
-				</div>
-
-
-				<div class="row">
-					<div class="4u 12u$(medium)">
-						<section class="box">
-							<h3>Combo Lock Module</h3>
-							<img src="images/profile_placeholder.gif" alt="" />
-							<p>The Combo Lock Module </p>
-						</section>
-					</div>
-
-					<div class="4u 12u$(medium)">
-						<section class="box">
-							<h3>Needy Module</h3>
-							<img src="images/profile_placeholder.gif" alt="" />
-							<p>The Needy Module is a simple module where the object is to
-							remember to turn it off at every interval.  If neglected, the
-							bomb will explode.</p>
-						</section>
-					</div>
-
-					<div class="4u 12u$(medium)">
-						<section class="box">
-							<h3>Aux Cable Module</h3>
-							<img src="images/profile_placeholder.gif" alt="" />
-							<p>The Aux Cable Module </p>
-						</section>
-					</div>
-				</div>
-
-				<div class="row">
-
-					<div class="4u 12u$(medium)">
-						<section class="box">
-							<h3>Morse Code Module</h3>
-							<img src="images/profile_placeholder.gif" alt="" />
-							<p>The Morse Code Module </p>
-						</section>
-					</div>
-				</div>
-
-		</section>
-
-
-
 
 		<!-- Footer -->
 			<footer id="footer">

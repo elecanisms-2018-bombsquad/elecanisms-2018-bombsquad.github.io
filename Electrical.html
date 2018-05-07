@@ -7,7 +7,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Elements - Transit by TEMPLATED</title>
+		<title>Communication Protocol</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -32,21 +32,91 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="Gameplay.html">Gameplay</a></li>
 					<li><a href="Electrical.html">Communication Protocol</a></li>
-					<li><a href="Software.html">Software</a></li>
+					<li><a href="Architecture.html">Architecture</a></li>
+					<li><a href="Support.html">Supporting Technology</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<!-- Main -->
+
 			<section id="main" class="wrapper">
 				<div class="container">
 
 					<header class="major">
-						<h2>Elements</h2>
-						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						<h2>Communication Protocol</h2>
+						<p>The various ways our devices talk to each other</p>
 					</header>
 
+				</div>
+			</section>
+
+		<!-- Communication Protocol -->
+		<section id="communication" class="wrapper style2 special">
+			<div class="container">
+
+				<header class = "major">
+					<h2>Types of Communication</h2>
+				</header>
+
+					<img src = "images/"/>
+					<p align="left"> Each module consists of a PIC24 microcontroller
+					on a custom breakout board.  The basic communication connections on
+					each module consists of a SCL and SDA wire through a DS9 connector.
+					These connections are used to communicate between an individual
+					module's PIC and the Master Module's PIC.
+					</p>
+
+					<p align="left">
+					In addition to each SCL and SDA, each module's PIC connects to its
+					interactive components through the digital input pins.  Players
+					experience the game through a variety of buttons, switches, LEDs,
+					and multi-segment displays.
+					</p>
+
+			</div>
+		</section>
+
+		<!-- I2C Communication -->
+		<section id="i2c" class="wrapper style2 special">
+			<div class="container">
+
+				<header class = "major">
+					<h2>I2C Communication</h2>
+				</header>
+
+					<img src = "images/"/>
+					<p align="left">
+					Modules are divided into two types for I2C communication: a Master Module,
+					and a Follower Module.  During the game,
+					</p>
+
+			</div>
+		</section>
+
+
+		<!-- Additional Section Template, Uncomment if needed. -->
+		<!--
+		<section id="i2c" class="wrapper style2 special">
+			<div class="container">
+
+				<header class = "major">
+					<h2>I2C Communication</h2>
+				</header>
+
+					<img src = "images/"/>
+					<p align="left">
+					Modules are divided into two types for I2C communication: a Master Module,
+					and a Follower Module.  During the game,
+					</p>
+
+			</div>
+		</section>
+		-->
+
+		
 					<!-- Text -->
+					<!--
 						<section>
 							<h3>Text</h3>
 							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
@@ -90,8 +160,9 @@ i++;
 
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						</section>
-
+					-->
 					<!-- Lists -->
+					<!--
 						<section>
 							<h3>Lists</h3>
 							<div class="row">
@@ -181,8 +252,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								</div>
 							</div>
 						</section>
+					-->
 
 					<!-- Table -->
+					<!--
 						<section>
 							<h3>Table</h3>
 							<h4>Default</h4>
@@ -276,8 +349,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								</table>
 							</div>
 						</section>
+					-->
 
 					<!-- Buttons -->
+					<!--
 						<section>
 							<h3>Buttons</h3>
 							<ul class="actions">
@@ -312,8 +387,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								<li><span class="button disabled">Default</span></li>
 							</ul>
 						</section>
+					-->
 
 					<!-- Form -->
+					<!--
 						<section>
 							<h3>Form</h3>
 							<form method="post" action="#">
@@ -367,8 +444,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								</div>
 							</form>
 						</section>
+					-->
 
 					<!-- Image -->
+					<!--
 						<section>
 							<h3>Image</h3>
 							<h4>Fit</h4>
@@ -394,8 +473,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				</div>
 			</section>
+		-->
 
 		<!-- Footer -->
+
 			<footer id="footer">
 				<div class="container">
 					<section class="links">

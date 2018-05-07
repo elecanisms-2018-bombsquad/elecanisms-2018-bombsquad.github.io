@@ -61,6 +61,8 @@
 
 	.row {
 		border-bottom: solid 1px transparent;
+		display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
 	}
 
 	.row > * {
@@ -203,6 +205,8 @@
 			.row.\30 \25 {
 				margin: 0 0 -1px 0;
 			}
+
+			
 
 	/* Cells */
 
