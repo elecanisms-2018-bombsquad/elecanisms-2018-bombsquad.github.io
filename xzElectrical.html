@@ -7,7 +7,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Elements - Transit by TEMPLATED</title>
+		<title>Bomb Squad - Communication Protocol</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -33,19 +33,128 @@
 					<li><a href="Gameplay.html">Gameplay</a></li>
 					<li><a href="Electrical.html">Communication Protocol</a></li>
 					<li><a href="Architecture.html">Architecture</a></li>
-					<li><a href="Support.html">Supporting technology</a></li>
+					<li><a href="Support.html">Supporting Technology</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<!-- Main -->
+
 			<section id="main" class="wrapper">
 				<div class="container">
 
 					<header class="major">
-						<h2>Supporting Technology</h2>
-						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						<h2>Communication Protocol</h2>
+						<p>The various ways our devices talk to each other</p>
 					</header>
+
+				</div>
+			</section>
+
+		<!-- Communication Protocol -->
+		<section id="communication" class="wrapper style2 special">
+			<div class="container">
+
+				<header class = "major">
+					<h2>Types of Communication</h2>
+				</header>
+
+				<img style="height:75%; width:75%; object-fit: contain; padding-bottom: 50px"
+				class="center"
+				src = "images/PowerConnectors.JPG"/> <!-- filler pic-->
+					<p align="left"> Each module consists of a PIC24 microcontroller
+					on a custom breakout board.  The basic communication connections on
+					each module consists of a SCL and SDA wire through a DE-9 connector.
+					These connections are used to communicate between an individual
+					module's PIC and the Master Module's PIC.  Although there are multiple
+					redundant grounds in the DE-9 Connector to better isolate each signal
+					wire and reduce interference, we only used one pin for GND, pin 5.
+					</p>
+
+					<div class="row">
+
+						<div class="6u 12u(medium)">
+
+							<figure>
+								<img style="height:100%; width:100%; object-fit: contain;"
+								src = "images/DE-9Connector.JPG"/>
+								<figcaption><i>DE-9 Connector.</i></figcaption>
+							</figure>
+						</div>
+
+						<div class="6u$ 12u$(medium)">
+
+							<figure>
+								<img style="height:100%; width:100%; object-fit: contain;"
+								src = "images/DE-9Pinout.png"/>
+								<figcaption><i>Custom Pinout schematic of the DE-9 connector.</i></figcaption>
+							</figure>
+						</div>
+
+					</div>
+
+					<img style="padding-bottom: 50px">
+
+					<p align="left">
+					In addition to each SCL and SDA, each module's PIC connects to its
+					interactive components through the digital input pins.  Players
+					experience the game through a variety of buttons, switches, LEDs,
+					and multi-segment displays.
+					</p>
+
+					<figure>
+					<img style="height:75%; width:75%; object-fit: contain;"
+					class="center"
+					src="images/assortedthings.JPG" />
+					<figcaption><i>Assorted components involved throughout the project.</i></figcaption>
+					<figure>
+
+
+			</div>
+		</section>
+
+		<!-- I2C Communication -->
+		<section id="i2c" class="wrapper style2 special">
+			<div class="container">
+
+				<header class = "major">
+					<h2>I2C Communication</h2>
+				</header>
+
+				<img style="height:75%; width:75%; object-fit: contain; padding-bottom: 50px"
+				class="center"
+				src = "images/PowerConnectors.JPG"/> <!--Placeholder image-->
+					<p align="left">
+					Modules are divided into two types for I2C communication: a Master Module,
+					and a Follower Module.  During the game,the Master module will boot up and
+					detect the various modules connected.  After intializing a setup mode,
+					each module will then await interactions from the user and report back to
+					the Master Module with its completion status.
+					</p>
+
+			</div>
+		</section>
+
+
+		<!-- Additional Section Template, Uncomment if needed. -->
+		<!--
+		<section id="i2c" class="wrapper style2 special">
+			<div class="container">
+
+				<header class = "major">
+					<h2>I2C Communication</h2>
+				</header>
+
+					<img src = "images/"/>
+					<p align="left">
+					Modules are divided into two types for I2C communication: a Master Module,
+					and a Follower Module.  During the game,
+					</p>
+
+			</div>
+		</section>
+		-->
+
 
 					<!-- Text -->
 					<!--
@@ -282,6 +391,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</div>
 						</section>
 					-->
+
 					<!-- Buttons -->
 					<!--
 						<section>
@@ -319,6 +429,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							</ul>
 						</section>
 					-->
+
 					<!-- Form -->
 					<!--
 						<section>
@@ -403,71 +514,29 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				</div>
 			</section>
-				-->
-
-			<!-- Module Connections -->
-			<section id="Module Connections" class="wrapper style2 special">
-				<div class="container">
-
-					<header class = "major">
-						<h2></h2>
-					</header>
-
-						<img src = ""/>
-						<p align="left">
-
-						</p>
-
-				</div>
-			</section>
+		-->
 
 		<!-- Footer -->
+
 			<footer id="footer">
 				<div class="container">
 					<section class="links">
 						<div class="row">
 							<section class="3u 6u(medium) 12u$(small)">
-								<h3>Lorem ipsum dolor</h3>
-								<ul class="unstyled">
-									<li><a href="#">Lorem ipsum dolor sit</a></li>
-									<li><a href="#">Nesciunt itaque, alias possimus</a></li>
-									<li><a href="#">Optio rerum beatae autem</a></li>
-									<li><a href="#">Nostrum nemo dolorum facilis</a></li>
-									<li><a href="#">Quo fugit dolor totam</a></li>
-								</ul>
+								<a href="index.html"><h3>Home</h3></a>
 							</section>
 							<section class="3u 6u$(medium) 12u$(small)">
-								<h3>Culpa quia, nesciunt</h3>
-								<ul class="unstyled">
-									<li><a href="#">Lorem ipsum dolor sit</a></li>
-									<li><a href="#">Reiciendis dicta laboriosam enim</a></li>
-									<li><a href="#">Corporis, non aut rerum</a></li>
-									<li><a href="#">Laboriosam nulla voluptas, harum</a></li>
-									<li><a href="#">Facere eligendi, inventore dolor</a></li>
-								</ul>
+								<a href="Gameplay.html"><h3>Gameplay</h3></a>
 							</section>
 							<section class="3u 6u(medium) 12u$(small)">
-								<h3>Neque, dolore, facere</h3>
-								<ul class="unstyled">
-									<li><a href="#">Lorem ipsum dolor sit</a></li>
-									<li><a href="#">Distinctio, inventore quidem nesciunt</a></li>
-									<li><a href="#">Explicabo inventore itaque autem</a></li>
-									<li><a href="#">Aperiam harum, sint quibusdam</a></li>
-									<li><a href="#">Labore excepturi assumenda</a></li>
-								</ul>
+								<a href="Architecture.html"><h3>Architecture</h3></a>
 							</section>
 							<section class="3u$ 6u$(medium) 12u$(small)">
-								<h3>Illum, tempori, saepe</h3>
-								<ul class="unstyled">
-									<li><a href="#">Lorem ipsum dolor sit</a></li>
-									<li><a href="#">Recusandae, culpa necessita nam</a></li>
-									<li><a href="#">Cupiditate, debitis adipisci blandi</a></li>
-									<li><a href="#">Tempore nam, enim quia</a></li>
-									<li><a href="#">Explicabo molestiae dolor labore</a></li>
-								</ul>
+								<a href="Support.html"><h3>Support Technology</h3></a>
 							</section>
 						</div>
 					</section>
+
 					<div class="row">
 						<div class="8u 12u$(medium)">
 							<ul class="copyright">
